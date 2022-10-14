@@ -23,11 +23,12 @@ def isSafe(sudoku, row, column, num):
                 return False
     return True
 
+
 def solveSudoku(sudoku, row, column):
     global count
     count += 1
 
-    if count > 10000:
+    if count > 1000000:
         return False
 
     if row == N - 1 and column == N:
@@ -58,5 +59,3 @@ def solver(sudoku):
     else:
         count = 0
         return False
-
-        
